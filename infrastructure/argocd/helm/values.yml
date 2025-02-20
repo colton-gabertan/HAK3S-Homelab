@@ -1,0 +1,14 @@
+global:
+  domain: argocd.home.lab
+
+server:
+  ingress:
+    enabled: true
+    ingressClassName: traefik
+    annotations:
+      cert-manager.io/cluster-issuer: "selfsigned-cluster-issuer"
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+    tls: true
+    extraHosts:
+      - name: argocd.home.lab
+        path: /
