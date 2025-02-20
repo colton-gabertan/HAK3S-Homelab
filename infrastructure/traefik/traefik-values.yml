@@ -1,4 +1,6 @@
-ports:
+entryPoints:
   web:
-    redirectTo:
-      port: websecure
+    address: ":80"
+
+  websecure:
+    address: ":443"
