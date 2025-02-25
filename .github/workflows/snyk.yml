@@ -1,3 +1,4 @@
+# Scan all manifests for dependency issues & vulnerabilities
 name: Snyk Infrastructure as Code Scan
 on: push
 jobs:
