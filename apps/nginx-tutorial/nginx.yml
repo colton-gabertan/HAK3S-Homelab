@@ -72,6 +72,6 @@ spec:
                 port:
                   number: 80
   tls:
-  - hosts:
-    - nginx.home.lab
-    secretName: nginx-certificate-secret
+    - hosts:
+        - nginx.home.lab
+      secretName: nginx-certificate-secret

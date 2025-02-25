@@ -1,3 +1,4 @@
+---
 apiVersion: traefik.io/v1alpha1
 kind: IngressRoute
 metadata:
@@ -35,4 +36,3 @@ spec:
     kind: ClusterIssuer
   dnsNames:
     - argocd.home.lab
-

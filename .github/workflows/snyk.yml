@@ -1,4 +1,4 @@
-# Scan all manifests for dependency issues & vulnerabilities
+---
 name: Snyk Infrastructure as Code Scan
 on: push
 jobs:
@@ -11,5 +11,4 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-           args: --severity-threshold=medium
-           
+          args: --severity-threshold=medium
