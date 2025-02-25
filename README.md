@@ -6,7 +6,7 @@ My collection of notes and configs for my self-hosted, highly-available, lightwe
 > **Note**: To host the k3s cluster itself, I have deployed with nearly indentical configurations from https://github.com/techno-tim/k3s-ansible. Please check out his repo to understand why this cluster is highly available and exactly how it was provisioned via Ansible!
 
 ***
-
+## DevOps: How It's Applied Here
 ### GitOps <img src="https://github.com/user-attachments/assets/a8216687-8b82-4e26-8d24-ea3ca3562986" width="3%"/>
 
 I'm pushing the boundaries of  my personal homelab development by embracing a fully Git-driven approach. This empowers me to not only publish my work and experiences but also to create a future-proof, auditable, and easily replicable infrastructure. By syncing my pipeline with my repository, I've automated cluster state management, including rollbacks and updates, with the repo as the source of truth.
@@ -26,7 +26,7 @@ For the purpose of this homelab, I've chosen to decouple the CI piece from the C
 
 Once changes are published to the repo, [ArgoCD](https://github.com/argoproj/argo-cd) is able to pull any new or modified changes and apply them directly to my homelab cluster. This tool also allows me to visualize the state and keep track of which versions of my applications that are actively running. More on the CD implementation is detailed [here](/infrastructure/argocd).
 
-# Demo - Simple nginx Deployment
+## Demo - Simple nginx Deployment
 
 Within my [/apps/nginx-tutorial](/apps/nginx-tutorial) is a kubernetes manifest and accompanying README that has been used for self-teaching on how to utilize this platform. With this deployment, I am able to:
 - Utilize GitOps to edit configurations and kick off CI/CD workflows
