@@ -12,7 +12,7 @@ I will be highlighting:
   - cert-manager
   - traefik
 
-## GitOps
+## GitOps <img src="https://github.com/user-attachments/assets/a8216687-8b82-4e26-8d24-ea3ca3562986" width="3%"/>
 
 Since git is essentially now the control plane in which we can deploy and manage our applictions, it's useful to follow a basic branching strategy. This tends to vary based on project requirements, but my personal workflow is as follows:
 
@@ -26,7 +26,7 @@ Once the `test` CI checks clear, I am able to create a pull request that merges 
 
 By having my repo modifications jump through so many hoops, it allows for extensive CI and testing, and explicit approval for the pull request into `production` before my CD workflow kicks off and makes actual changes to my homelab cluster.
 
-## CI/CD Pipeline
+## CI/CD Pipeline <img src="https://github.com/user-attachments/assets/28188cfa-3c6f-4a4c-aa6a-2357d719ab18" width="3%"/>
 ### CI Workflow
 The CI workflow is configured to kick off whenever there is a push to the development and test branches as well as the final pull request to production, ensuring that every change at every stage goes through the pipeline. 
 
@@ -79,7 +79,7 @@ Kubernetes Objects via ArgoCD:
 
 ![image](https://github.com/user-attachments/assets/46f2e23f-5eb2-4a8f-80f5-2953024b74b3)
 
-## Kubernetes Objects Created
+## Kubernetes Objects Created <img src="https://github.com/user-attachments/assets/32cc0c08-f0a3-46a2-9bac-10a4280f8ae1" width="3%"/>
 
 In reference to [nginx.yml](/apps/nginx-tutorial/nginx.yml) there are 3 essential `kind`'s of objects created, namely the namespace, deployment, and service. The `nginx` namespace helps us compartmentalize our application and define objects within it to reference. The deployment contains the configurations for the pods/containers themselves, including the image and port to expose. The service is what creates a ClusterIP. This object essentially acts as an internal load balancer that will route workloads through each pod as needed. To clarify, let's take a look at these objects.
 
