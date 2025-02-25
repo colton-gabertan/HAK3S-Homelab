@@ -4,7 +4,7 @@ name: Lint and Scan Kubernetes manifests
 on:
   push:
     branches:
-      - index
+      - Index
   pull_request:
 
 jobs:
