@@ -1,7 +1,11 @@
-# HAK3S-Homelab
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/64b338c4-3428-4d67-bb2b-49b7d14422b1" width="30%"/>
+</div>  
 
 My collection of notes and configs for my self-hosted, highly-available, lightweight kubernetes cluster. This project was created to study and apply DevOps practices, fully encapsulating concepts such as GitOps, CI/CD, and IaC. 
 > **Note**: To host the k3s cluster itself, I have deployed with nearly indentical configurations from https://github.com/techno-tim/k3s-ansible. Please check out his repo to understand why this cluster is highly available and exactly how it was provisioned via Ansible!
+
+***
 
 ### GitOps <img src="https://github.com/user-attachments/assets/a8216687-8b82-4e26-8d24-ea3ca3562986" width="3%"/>
 
@@ -9,7 +13,7 @@ I'm pushing the boundaries of  my personal homelab development by embracing a fu
 
 ###  Infrastructure as Code (IaC) <img src="https://github.com/user-attachments/assets/32cc0c08-f0a3-46a2-9bac-10a4280f8ae1" width="3%"/>
 
-Deploying via Infrastructure as Code (IaC) allows me to declaratively define infrastructure, leveraging Kubernetes manifests (`.yml`) to specify the desired state of resources like pods, deployments, and services. This inherently facilitates automation for configuring services and applications. To maintain clarity, while all manifests are technically infrastructure, the repository is structured with [/infrastructure](/infrastructure) and [/apps](/apps) directories, distinguishing between internal cluster services (e.g., TLS certificates, reverse proxy) and user-deployed applications. 
+Deploying via IaC allows me to declaratively define infrastructure, leveraging Kubernetes manifests (`.yml`) to specify the desired state of resources like pods, deployments, and services. This inherently facilitates automation for configuring services and applications. To maintain clarity, while all manifests are technically infrastructure, the repository is structured with [/infrastructure](/infrastructure) and [/apps](/apps) directories, distinguishing between internal cluster services (e.g., TLS certificates, reverse proxy) and user-deployed applications. 
 
 [infrastructure](/infrastructure)  
 |_ [argocd](/infrastructure/argocd) - State Syncing  
