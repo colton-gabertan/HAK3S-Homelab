@@ -2,7 +2,7 @@
     <img src="https://github.com/user-attachments/assets/64b338c4-3428-4d67-bb2b-49b7d14422b1" width="30%"/>
 </div>  
 
-My collection of notes and configs for my self-hosted, highly-available, lightweight kubernetes cluster. This project was created to study and apply DevOps practices, fully encapsulating concepts such as GitOps, CI/CD, and IaC. 
+My collection of notes and configs for my self-hosted, highly-available, lightweight kubernetes cluster. This project was created to study and apply DevOps practices, fully encapsulating concepts such as GitOps, CI/CD, and IaC. It is a deep-dive into learning kubernetes personally from scratch.
 > **Note**: To host the k3s cluster itself, I have deployed with nearly indentical configurations from https://github.com/techno-tim/k3s-ansible. Please check out his repo to understand why this cluster is highly available and exactly how it was provisioned via Ansible!
 
 ***
