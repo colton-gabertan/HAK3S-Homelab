@@ -6,6 +6,10 @@ on:
     branches:
       - Index
   pull_request:
+    branches:
+      - development
+      - test
+      - production
 
 jobs:
   lint:
