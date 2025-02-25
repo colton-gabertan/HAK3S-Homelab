@@ -3,6 +3,7 @@ name: Snyk Infrastructure as Code Scan
 on: push
 jobs:
   security:
+    needs: lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
